@@ -1,0 +1,21 @@
+h1 {
+    color: rgb(120, 197, 248);
+    font-size: 200%;
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+}
+
+p {
+    padding-left: 20px;
+}
+
+.header{
+    color: rgb(80, 241, 142);
+    font-size: 500%;
+    text-align: center;
+}
+
+#header1 {
+    border: darkblue;
+    border-style: groove;
+}
