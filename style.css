@@ -1,0 +1,76 @@
+p {
+    font-size: 150%;
+}
+h3 {
+    color: green;
+}
+
+span {
+    font-size: 250%
+}
+
+#s1 {
+    color: aqua;
+}
+
+#s2 {
+    color: green;
+}
+
+#s3 {
+    color:yellow;
+}
+
+#s4 {
+    color: red;
+}
+
+#s5 {
+    color: blue;
+}
+
+#s6 {
+    color: blueviolet;
+}
+
+#s7 {
+    color: purple;
+}
+
+#s8 {
+    color: palegoldenrod;
+}
+
+#s9 {
+    color:gold;
+}
+
+#s10 {
+    color:pink;
+}
+
+#myname {
+    font-family: Tahoma;
+}
+
+#sent1 {
+    font-family: Tahoma;
+    font-size: 150%;
+}
+#sent2 {
+    font-family: 'Times New Roman';
+    font-size: 150%;
+}
+#sent3 {
+    font-family: Arial;
+    font-size: 150%;
+}
+#sent4 {
+    font-family: 'Segoe UI';
+    font-size: 150%;
+}
+
+#i1{
+    border: 2px solid red;
+}
+
