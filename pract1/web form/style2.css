@@ -1,0 +1,21 @@
+input[type=text], input[type=password]{
+    width:200px;
+ }
+
+#surname {
+    margin-left: 40%;
+}
+input{
+    margin-top: 1%;
+}
+#surname2, #passwordinpt {
+    margin-left: 22%;
+}
+
+#password {
+    margin-left: 33.5%;
+}
+
+#message, #male  {
+    margin-top: 0.5%;
+}

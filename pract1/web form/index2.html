@@ -1,0 +1,58 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Регистрация</title>
+        <link rel="stylesheet" href="style2.css">
+    </head>
+    <body>
+        <div id="main" style="background: rgb(0, 183, 255); border-radius: 10px; height: 100%;">
+            
+            <div id="heading" style="margin-bottom: 40px;">
+                <h1 style="text-align: center; margin: 0; padding-top: 2%; color: black">Регистрация на форуме инвесторов</h1>
+            </div>
+
+            <div id="contacts" style="background: aliceblue; border-radius: 20px; margin-left: 10%; margin-right: 10%;">
+
+                <div id="post-heading" style="text-align: center; margin: 2%;"><h2 style="padding-top: 2%;">Форма Регистрации</h2></div>
+                <form id="form_input" style="margin: 10px 10%;font-size: 1.1em; padding: 10px 2%;" action="/fu-data" method="post">
+
+                    <label for="name">Имя <span style="color: red">*</span></label>
+                    <label id ="surname" for="surname">Фамилия <span style="color: red">*</span></label><br>
+                    <input type="text" placeholder="Введите Ваше Имя" name="name" id="name" style="margin-bottom: 15px;">
+                    <input type="text" placeholder="Введите Вашу фамилию" name="surname" id="surname2" style="margin-bottom: 15px;"><br>
+                    
+                    <label for="email">E-mail</label><br>
+                    <input type="text" placeholder="Введите e-mail" name="email" id="email" style="margin-bottom: 15px;"><br>
+                    
+                    <label for="nickname">Ваш никнейм</label>
+                    <label id="password" for="group">Пароль учётной записи <span style="color: red">*</span></label><br>
+                    <input type="text" placeholder="Введите никнейм" name="nickname" id="nicknameinpt" style="margin-bottom: 15px;">
+                    <input type="password" placeholder="Введите пароль" name="password" id="passwordinpt" style="margin-bottom: 15px;">
+                    <input type="password" placeholder="Повторите пароль" name="password" id="passwordinpt2" style="margin-bottom: 15px;"><br>
+
+                    <label for="male">Пол <span style="color: red">*</span></label><br>
+                    <select name="male" id="male" style="margin-bottom: 15px;">
+                        <option>Мужской</option>
+                        <option>Женский</option>
+                    </select><br>
+
+                    <label for="radio">Ваш возраст <span style="color: red">*</span></label><br>
+                    <div id="radio" style="margin-bottom: 10px; margin-top: 1px">
+                        <span><input type="radio" name="number" checked=""> 18-25</span>
+                        <span><input type="radio" name="number"> 26-40</span>
+                        <span><input type="radio" name="number"> 41-55</span>
+                        <span><input type="radio" name="number"> 56+</span><br>
+                    </div>
+
+                    <label for="message">Опишите цель вашего инвестирования <span style="color: darkred">*</span></label><br>
+                    <textarea placeholder="Например 'Накопить на машину/квартиру/отдых' или 'Отложить на пенсию'" name="message" id="message" style="margin-bottom: 15px; height: 120px; width: 90%"></textarea><br>
+                    <div id="mess_send" style="text-align: center">
+                        <button style="border-radius: 5px; padding: 5px 9px; font-size: 1em; cursor: pointer;" type="submit">
+                            Отправить
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </body>
+</html>
