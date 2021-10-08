@@ -90,11 +90,7 @@ body{
   padding: 0;
   position: absolute;
 }
-@media only screen and (max-width: 575px) {
-  .card .card-header .card-header-right {
-    display: none;
-  }
-}
+
 .card .card-header .card-header-right .dropdown-menu {
   margin-top: 0;
 }
@@ -148,24 +144,14 @@ body{
   background-color: rgba(255, 255, 255, 0.7);
   z-index: 999;
 }
-.card.card-load .card-loader i {
-  margin: 0 auto;
-  color: #04a9f5;
-  font-size: 24px;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
+
 .card.full-card {
   z-index: 99999;
   border-radius: 0;
 }
 
 .bg-c-green {
-    background: #1de9b6;
+    background: #34f7c9;
 }
 
 h6 {
