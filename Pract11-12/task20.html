@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Маркович Владимир ПИ20-3</title>
+    <script>
+        //task20
+        function getDays(year, month) {
+            return (new Date(year, month, 1) - new Date(year, month - 1, 1)) / 1000 / 3600 / 24;
+        }
+        //December = 31 days
+        console.log(getDays(2021, 12))
+
+    </script>
+</head>
+
+<body>
+    <h1>Задание 20</h1>
+</body>
+
+</html>

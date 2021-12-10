@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Маркович Владимир ПИ20-3</title>
+    <script>
+        //task12
+        //Using prototype: 
+        function Vector(x, y) {
+            this.x = x;
+            this.y = y;
+        }
+
+        Vector.prototype.plus = function (point) {
+            return new Vector(this.x + point.x, this.y + point.y);
+        };
+
+        Vector.prototype.minus = function (point) {
+            return new Vector(this.x - point.x, this.y - point.y);
+        };
+
+        Object.defineProperty(Vector.prototype, "length", {
+            get: function () {
+                return ((this.x) ** 2 + (this.y) ** 2) ** 0.5;
+            }
+        });
+
+        console.log(new Vector(1, 2).plus(new Vector(2, 3)));
+        console.log(new Vector(1, 2).minus(new Vector(2, 3)));
+        console.log(new Vector(3, 4).length);
+
+
+        /* Using Class
+        class Vector {
+            constructor(x,y){
+                this.x = x;
+                this.y = y;
+            }
+            plus(point){
+                return new Vector(this.x + point.x, this.y + point.y)
+            }
+            minus(point){
+                return new Vector(this.x - point.x, this.y - point.y)
+            }
+            get length(){
+                return ((this.x)**2 + (this.y)**2)**0.5;
+            }
+        }
+        console.log(new Vector(1, 2).plus(new Vector(2, 3)));
+        console.log(new Vector(1, 2).minus(new Vector(2, 3)));
+        console.log(new Vector(3, 4).length);
+        */
+
+    </script>
+</head>
+
+<body>
+    <h1>Задание 12</h1>
+</body>
+
+</html>

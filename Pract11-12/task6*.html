@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Маркович Владимир ПИ20-3</title>
+  <script>
+      //task6
+      
+      var obj ={
+        method1: function(){
+          return {
+            method2: function(){
+              return {
+                method3: function(){
+                  return "Метод3"
+                }
+              }
+            }
+          }
+        }
+      }
+      console.log(obj.method1().method2().method3());
+    /* Second Variant:
+      let obj = {
+          method1: function(){
+              return this;
+          },
+
+          method2: function(){
+              return this;
+          },
+
+          method3: function(){
+              return "метод3"
+          },
+      };
+      
+      console.log(obj.method1().method2().method3())
+      */
+  </script>
+</head>
+<body>
+  <h1>Задание 6*</h1>
+</body>
+</html>

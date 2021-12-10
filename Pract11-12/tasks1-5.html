@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Маркович Владимир ПИ20-3</title>
+  <script>
+    //task1
+    let city1 = {};
+    city1.name = "ГородN";
+    city1.population = 10000000;
+
+    //task2
+    let city2 = {
+      name: "ГородM",
+      population: 1e6
+    };
+    //console.log(city2.population)
+
+    //task3
+    city1.getName = city2.getName = function () { return this.name; };
+    console.log(`City1 name is: ${city1.getName()}`);
+    console.log(`City2 name is: ${city2.getName()}`);
+
+    //task4
+    city1.exportStr = city2.exportStr = function () {
+      return `name = ${this.name}\npopulation = ${this.population}\n`;
+    };
+    console.log(city1.exportStr());
+    console.log(city2.exportStr());
+
+    //task5
+    function getObj() { return this; }
+    city1.getCity = city2.getCity = getObj;
+    console.log(city1.getCity().getName() + ' ' + city1.getCity().population);
+    console.log(city2.getCity().getName() + ' ' + city2.getCity().population);
+
+  </script>
+</head>
+
+<body>
+  <h1>Задания 1-5</h1>
+</body>
+
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Маркович Владимир ПИ20-3</title>
+  <script>
+    //task7
+    const d1 = [45, 78, 10, 3];
+    d1[7] = 100;
+    console.log(`Entire massive ${d1}`);;
+    console.log(`Sixth element ${d1[6]}`)
+    console.log(`Seventh element ${d1[7]}`);
+    //elements 4,5,6 are UNDEFINED
+
+    //task8
+    const d2 = [45, 78, 10, 3];
+    let summ2 = 0
+    for (let i = 0; i < d2.length; i++) {
+      summ2 += d2[i];
+    }
+    console.log(`Sum of ${d2} equals = ${summ2}`)
+
+    //task9 
+    const d3 = [45, 78, 10, 3];
+    d3[7] = 100;
+    let summ3 = 0
+    for (let i = 0; i < d3.length; i++) {
+      summ3 += d3[i];
+    }
+    console.log(`Sum of ${d3} equals = ${summ3}`)
+    //sum equals to NaN (Not A Number)
+
+    //task10
+    function my(a, b) { return b - a };
+    const d4 = [45, 78, 10, 3];
+    console.log(`Massive ${d4}, Sorted: ${d4.sort(my)}`);
+
+  </script>
+</head>
+
+<body>
+  <h1>Задания 7-10</h1>
+</body>
+
+</html>

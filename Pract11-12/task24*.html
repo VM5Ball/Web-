@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Маркович Владимир ПИ20-3</title>
+    <script>
+        //task24
+        function Unit(x, y) {
+            this.x = x;
+            this.y = y;
+
+            this.setX = function (x) {
+                this.x = x;
+                return this;
+            };
+            this.setY = function (y) {
+                this.y = y;
+                return this;
+            };
+            this.getX = function (x) {
+                return this.x;
+            };
+            this.getY = function (y) {
+                return this.y;
+            };
+        }
+
+        function Fighter(x, y, power) {
+            Unit.call(this, x, y);
+            this.power = power;
+            this.setPower = function (power) {
+                this.power = power;
+                return this;
+            };
+            this.getPower = function (power) {
+                return this.power;
+            };
+        }
+        Fighter.prototype = Unit;
+
+    </script>
+</head>
+
+<body>
+    <h1>Задание 24*</h1>
+</body>
+
+</html>
